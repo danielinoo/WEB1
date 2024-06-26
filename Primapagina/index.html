@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>LA MIA PRIMA PAGINA HTML</title>
+
+
+        <!-- modifica tutte le liste ol-->
+        <style>
+            ol{
+                margin-left: 35%;
+                margin-right: 45%;
+                text-align: center;
+            }
+        </style>
+
+        <!--modificastili delle tabelle: metto table class = nomeclasse e poi je metto .nomeclasse (th,tr,td) e quello che vojo modifica-->
+        <style>
+
+            table.stile1{
+                font-family: Arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            .stile1 td,th{
+                border:1px solid #b8b4b4dd ;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .stile1 tr:nth-child(even)
+            {
+                background-color: #b8b4b4dd;
+
+            }
+
+
+            table.stile2{
+                font-family: Arial, sans-serif;
+                border-collapse: collapse;
+                width: 60%;
+            }
+
+            .stile2 td,th{
+                border:1px solid #e96969dd ;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .stile2 tr:nth-child(even)
+            {
+                background-color: #e96969dd;
+
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        
+        <center>
+
+        <h1>ciao mondo!</h1>
+
+        <p> 
+            benvenuti nella mia prima pagina html.
+        </p>
+
+        <!-- gestione link con immagine -->
+        <a href="https://enpa.org/" target="_blank">
+
+            <!-- gestione immagine in html -->
+        <img src="img/img_dog.jpg" alt="Dog in a jacket" width="500" height="500" style="border : 5px solid black">
+       
+        </a>
+
+        <br>
+        <br>
+        <br>
+        <br>
+                                                <!--target = _blank apre link in un altra scheda-->
+        <a href="https://www.uffizi.it/gli-uffizi" target="_blank">visita firenze con il tuo cane! </a>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <!--liste in html-->
+        <h2> Siti web che parlano di animali
+        <ol>
+            
+            <li>
+                <a href="https://gattoconpersonalita.com/" target="_blank">GATTO </a>
+            </li>
+
+            <br>
+            <br>
+            
+            <li>
+                <a href="https://eco-work.it/topi-e-ratti/" target="_blank">TOPO </a>
+            </li>
+            <br>
+            <br>
+
+            <li>
+                <a href="https://www.cure-naturali.it/enciclopedia-naturale/animali/altri-animali/maiale.html" target="_blank">MAIALE </a>
+            </li>
+            <br>
+            <br>
+
+        </ol>
+        </h2>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--tabelle in html-->
+        <!--tr: riga-->
+        <!--td: colonne-->
+        <!--th: titolo colonna-->
+
+
+
+        
+
+        <table class = "stile1">
+
+            <tr >
+                <th>nomi</th>
+                
+            </tr>
+
+            <tr>
+                
+                <td>mario</td>
+            </tr>
+
+            <tr>
+                <td>gino</td>
+            
+            </tr>
+
+
+
+        </table>
+
+
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <table class = "stile2">
+
+            <thead>
+            <tr class="table100-head">
+            <th class="column1">Date</th>
+            <th class="column2">Order ID</th>
+            <th class="column3">Name</th>
+            <th class="column4">Price</th>
+            <th class="column5">Quantity</th>
+            <th class="column6">Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td class="column1">2017-09-29 01:22</td>
+            <td class="column2">200398</td>
+            <td class="column3">iPhone X 64Gb Grey</td>
+            <td class="column4">$999.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$999.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-28 05:57</td>
+            <td class="column2">200397</td>
+            <td class="column3">Samsung S8 Black</td>
+            <td class="column4">$756.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$756.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-26 05:57</td>
+            <td class="column2">200396</td>
+            <td class="column3">Game Console Controller</td>
+            <td class="column4">$22.00</td>
+            <td class="column5">2</td>
+            <td class="column6">$44.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-25 23:06</td>
+            <td class="column2">200392</td>
+            <td class="column3">USB 3.0 Cable</td>
+            <td class="column4">$10.00</td>
+            <td class="column5">3</td>
+            <td class="column6">$30.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-24 05:57</td>
+            <td class="column2">200391</td>
+            <td class="column3">Smartwatch 4.0 LTE Wifi</td>
+            <td class="column4">$199.00</td>
+            <td class="column5">6</td>
+            <td class="column6">$1494.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-23 05:57</td>
+            <td class="column2">200390</td>
+            <td class="column3">Camera C430W 4k</td>
+            <td class="column4">$699.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$699.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-22 05:57</td>
+            <td class="column2">200389</td>
+            <td class="column3">Macbook Pro Retina 2017</td>
+            <td class="column4">$2199.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$2199.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-21 05:57</td>
+            <td class="column2">200388</td>
+            <td class="column3">Game Console Controller</td>
+            <td class="column4">$999.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$999.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-19 05:57</td>
+            <td class="column2">200387</td>
+            <td class="column3">iPhone X 64Gb Grey</td>
+            <td class="column4">$999.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$999.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-18 05:57</td>
+            <td class="column2">200386</td>
+            <td class="column3">iPhone X 64Gb Grey</td>
+            <td class="column4">$999.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$999.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-22 05:57</td>
+            <td class="column2">200389</td>
+            <td class="column3">Macbook Pro Retina 2017</td>
+            <td class="column4">$2199.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$2199.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-21 05:57</td>
+            <td class="column2">200388</td>
+            <td class="column3">Game Console Controller</td>
+            <td class="column4">$999.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$999.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-19 05:57</td>
+            <td class="column2">200387</td>
+            <td class="column3">iPhone X 64Gb Grey</td>
+            <td class="column4">$999.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$999.00</td>
+            </tr>
+            <tr>
+            <td class="column1">2017-09-18 05:57</td>
+            <td class="column2">200386</td>
+            <td class="column3">iPhone X 64Gb Grey</td>
+            <td class="column4">$999.00</td>
+            <td class="column5">1</td>
+            <td class="column6">$999.00</td>
+            </tr>
+
+
+
+        </table>
+
+
+        
+        </center>
+
+    </body>
+</html>
