@@ -1,0 +1,75 @@
+
+<!--Daniele Pietropaolo-->
+
+<!--modifica parametri: NOME TAG,CANCELLETTO,PUNTO-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!--PRIMO MODO PE MODIFICARE I PARAMETRI-->
+        <!--"FONT-SIZE == grandezza del testo-->
+        <style>
+
+                body{
+
+                    background-color: red;
+                    text-align: center;
+                }
+
+                p{
+                    text-align: left;
+                    
+                    font-size: xx-large; 
+                }
+
+        </style>
+
+        <!--SECONDO METODO (applicabile tramite id e cancelletto)-->
+        <style>
+        p #testogiallo{
+
+            color: yellow;
+        }
+
+        </style>
+
+            <!--p #testogiallo -> prende tutti i p con class testogiallo || div p -> prende tutti i p dentro div-->
+
+        <style>
+            div p{
+
+                color: rgb(2, 7, 7);
+            }
+        </style>
+
+        <!--TERZO METODO (col punto si applica )-->
+        <style>
+            .testobianco{
+
+                color: aliceblue;
+                text-align: center;
+                font-size: 40px;
+            }
+
+
+        </style>
+
+
+
+
+    </head>
+
+    <body>
+
+        <h1>BENVENUTI</h1>
+        <p>daje roma daje!!!</p>
+
+        <!--SECONDO METODO-->
+        <p id = "testogiallo">roma roma roma core de sta citta</p>
+
+        <!--TERZO METODO-->
+        <p class = "testobianco">ciaooo</p>
+    </body>
+<html>
