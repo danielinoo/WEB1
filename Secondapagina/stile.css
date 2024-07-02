@@ -1,0 +1,31 @@
+
+
+body{
+
+    background-color: red;
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    
+    font-size: xx-large; 
+}
+
+#testogiallo{
+
+color: yellow;
+}
+
+div p{
+
+color: rgb(2, 7, 7);
+}
+
+.testobianco{
+
+color: aliceblue;
+text-align: center;
+font-size: 40px;
+}
+
