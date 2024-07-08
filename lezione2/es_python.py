@@ -20,24 +20,65 @@ def html(n):
 
 '''
 
-    pagina11 : str = '''<div class="container">
-        <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>'''
+    pagina11 : str = ''' 
+    <br>
+    <br>
+    <br>
+  
+   <div class="container">
+   <div class="row">
+    <div class="col-sm">
+      
+           
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/siamese.jpeg"  width="286" height="245"alt="GATTO">
+              <div class="card-body">
+                <h5 class="card-title">Siamese</h5>
+                <p class="card-text"></p>
+                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://it.wikipedia.org/wiki/Siamese_(gatto)&ved=2ahUKEwjumKzS75aHAxV9h_0HHe-vAUEQFnoECC4QAQ&usg=AOvVaw0tqi0whpau_qSNqNL_Kr-v" class="btn btn-primary" target="_blank">vedi caratteristiche</a>
+              </div>
+             </div>
+            </div>
+  
+    </div>
+          '''
 
 
-    pagina12 : str = '''<div class="col-sm">
-            One of three columns
-          </div>'''
+    pagina12 : str = '''     <br>
+    <br>
+
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <img src="img/maine.jpeg"  width="286" height="245"alt="GATTO">
+      <div class="card-body">
+        <h5 class="card-title">Maine coon</h5>
+        <p class="card-text"></p>
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://it.wikipedia.org/wiki/Maine_Coon&ved=2ahUKEwiMmufi8JaHAxX7hP0HHeRmD7QQFnoECDcQAQ&usg=AOvVaw3ns9qADW_D4HOlSmjNSQHk" class="btn btn-primary" target="_blank">vedi caratteristiche</a>
+      </div>
+    </div>
+    <br>
+    <br>
+          '''
 
 
 
-    pagina13 = '''<div class="col-sm">
-            One of three columns
+    pagina13 = ''' <div class="col-sm">
+      
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="img/scottich.jpeg"  width="286" height="245"alt="GATTO">
+          <div class="card-body">
+            <h5 class="card-title">British Shorthair</h5>
+            <p class="card-text"></p>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://it.wikipedia.org/wiki/British_Shorthair&ved=2ahUKEwjz2cGx8JaHAxXd7rsIHe9nDW8QFnoECDwQAQ&usg=AOvVaw0PmolSFLEpzgCMxgsy4zsP" class="btn btn-primary" target="_blank">vedi caratteristiche</a>
           </div>
+         </div>
         </div>
-      </div>'''
+    </div>
+  </div>
+</div>
+     '''
 
 
     pagine_html = pagina11 + pagina12 * n + pagina13
