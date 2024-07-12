@@ -83,7 +83,7 @@ def html(n):
 
     pagine_html = pagina11 + pagina12 * n + pagina13
  
-    return pagine_html
+    print( pagine_html)
 
 
 
