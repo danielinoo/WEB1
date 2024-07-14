@@ -1,9 +1,4 @@
-#Daniele Pietropaolo  
-
-
-def html(n):
-
-  pagine_html : str = ''' <!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
 
@@ -17,9 +12,7 @@ def html(n):
     <body style="text-align: center;">
         <h1>tipi di gatti</h1>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-'''
-
-  pagina11 : str = ''' <div class="container">
+ <div class="container">
             <div class="row">
                 <div class="col-sm">
 
@@ -34,10 +27,7 @@ def html(n):
                         </div>
                     </div>
 
-                </div>'''
-
-
-  pagina12 : str = '''  <div class="col-sm">
+                </div>  <div class="col-sm">
 
                     <div class="col-sm">
                         <div class="card" style="width: 18rem;">
@@ -50,11 +40,33 @@ def html(n):
                         </div>
                     </div>
 
-                </div>'''
+                </div>  <div class="col-sm">
 
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/maine.jpeg"  width="286" height="245"alt="GATTO">
+                            <div class="card-body">
+                                <h5 class="card-title">Maine coon</h5>
+                                <p class="card-text"></p>
+                                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://it.wikipedia.org/wiki/Maine_Coon&ved=2ahUKEwiMmufi8JaHAxX7hP0HHeRmD7QQFnoECDcQAQ&usg=AOvVaw3ns9qADW_D4HOlSmjNSQHk" class="btn btn-primary" target="_blank">vedi caratteristiche</a>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>  <div class="col-sm">
 
-  pagina13 = ''' <div class="col-sm">
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/maine.jpeg"  width="286" height="245"alt="GATTO">
+                            <div class="card-body">
+                                <h5 class="card-title">Maine coon</h5>
+                                <p class="card-text"></p>
+                                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://it.wikipedia.org/wiki/Maine_Coon&ved=2ahUKEwiMmufi8JaHAxX7hP0HHeRmD7QQFnoECDcQAQ&usg=AOvVaw3ns9qADW_D4HOlSmjNSQHk" class="btn btn-primary" target="_blank">vedi caratteristiche</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <div class="col-sm">
                 
                     <div class="col">
                         <div class="card" style="width: 18rem;">
@@ -72,14 +84,4 @@ def html(n):
         </div>
 
     </body>
-</html>'''
-
-
-  pagine_html += pagina11 + pagina12 * n + pagina13
- 
-  print( pagine_html)
-
-
-
-
-html(n = 3)
+</html>
