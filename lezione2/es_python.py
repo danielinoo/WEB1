@@ -86,4 +86,6 @@ html(n = 3)
 
 # with open("index.html","w") as f:
 
-#   f.write(html(n = 3))
+#    f.write(html(n = 3))
+
+#python3 es_python.py > index.html
