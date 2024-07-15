@@ -83,3 +83,7 @@ def html(n):
 
 
 html(n = 3)
+
+# with open("index.html","w") as f:
+
+#   f.write(html(n = 3))
