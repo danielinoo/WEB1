@@ -3,7 +3,7 @@
 
 def html(n):
 
-  pagine_html : str = ''' <!doctype html>
+  pagine_html : str = ''' <doctype html>
 <html lang="en">
   <head>
 
