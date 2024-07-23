@@ -13,5 +13,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //pagina di invio della form
 app.get('/formRegistrazione', (req, res) => {
 console.log("Mi hai chiesto la form di registrazione");
-res.sendFile("formSemplice.html", { root: './htdoc' });
+res.sendFile("formsemplice.html", { root: './htdoc' });
 });
+
+
+app.get('/gestiscidatiform', (req, res) => {
+    console.log(req.query.fname);
+    res.send("<html>  Buonaserata " + req.query.fname + "</html" );
+    });
