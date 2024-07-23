@@ -19,5 +19,5 @@ res.sendFile("formsemplice.html", { root: './htdoc' });
 
 app.get('/gestiscidatiform', (req, res) => {
     console.log(req.query.fname);
-    res.send("<html>  Buonaserata " + req.query.fname + "</html" );
+    res.send("<html>  Buonaserata " + req.query.fname + " " + rep.query.fcognome + "</html" );
     });
