@@ -21,16 +21,23 @@ res.sendFile("formsemplice.html", { root: './htdoc' });
 });
 
 
-app.get('/gestiscidatiform', (req, res) => {
-    console.log(req.query.fname);
-    res.send("<html>  Buonaserata " + req.query.fname + " " + rep.query.fcognome + "</html" );
+app.post('/gestiscidatiform', (req, res) => {
+    console.log(req.body.fname);
+    response="<html>  Buonaserata " + req.body.fname + " " + req.body.fcognome + "<br>"+ "</html" ;
+    if (req.body.fsesso == "1")
+        response += "<br>sei un maschio"
+    else
+        response += "<br>sei una femmina"
+
+    response += "<br>sei di questa citta " + req.body.fcomune 
+    res.send(response);
     });
 
 
 
 
 
-//esercizio1  --------------------------------------------
+//esercizio1  sendfile--------------------------------------------
 
 app.get('/sendfile', (req, res) => {
     console.log("Mi hai chiesto la form di registrazione");
@@ -39,17 +46,15 @@ app.get('/sendfile', (req, res) => {
 
 
 
-// gestione urlmansend
+// gestione urlmansend-----------------------------------------
 app.post('/mansendfile', (req, res) => {
 
     console.log(req.body.password)
     password_ricevuta = req.body.password;
 
     if(password_ricevuta =="paperino")
-        res.send("<html>Bravo " + req.body.email + "<br> sono ponto a ricevere il file!</html>")
-
-    else
-        res.send("<html> attenzione password errata <html>")
+        response = "<html>Bravo " + req.body.email + "<br> sono ponto a ricevere il file!, la spassword inserita è"+ req.body.fpassword+ "</html>"
+        res.send(response)
 
 
 
