@@ -49,20 +49,40 @@ process.exit(0);
 
 
 
-a = prompt("Inserisci primo numero:")
-b = prompt("Inserisci secondo numero:")
-c = prompt("Inserisci operatore:")
-a1 = parseInt(a)
-b1 = parseInt(b)
-if(c=="+")
-	d = a1 + b1
-if(c=="-")
-	d = a1 - b1
+// a = prompt("Inserisci primo numero:")
+// b = prompt("Inserisci secondo numero:")
+// c = prompt("Inserisci operatore:")
+// a1 = parseInt(a)
+// b1 = parseInt(b)
+// if(c=="+")
+// 	d = a1 + b1
+// if(c=="-")
+// 	d = a1 - b1
 
-console.log("Risultato " + d)
+// console.log("Risultato " + d)
+// process.exit(0);
+
+
+
+// esercizio prova
+
+var a = 20
+var b = 10
+c = prompt("Vuoi inserire un numero?")
+
+if (c == "no"){
+    a = a + b
+    console.log("somma: "+ a + " " + typeof(a) + "\n");
+}
+else{
+
+    b = prompt("inserisci il numero:")
+    b = parseInt(b)
+    a = a + b
+    console.log("somma: "+ a + " " + typeof(a) + "\n");
+}
+
 process.exit(0);
-
-
 
 
 
@@ -74,14 +94,14 @@ messaggio e poi visualizza a schermo il messaggio richiamando la funzione consol
 
 
 //Esempio num. 2
-/*
-var A;
-var B;
-A = 3;
-B = "buongiorno a tutti";
-console.log("Il tipo della var A e' " + typeof(A) + "\n");
-console.log("Il tipo della var B e' " + typeof (B) + "\n");
-*/
+
+// var A;
+// var B;
+// A = 3;
+// B = "buongiorno a tutti";
+// console.log("Il tipo della var A e' " + typeof(A) + "\n");
+// console.log("Il tipo della var B e' " + typeof (B) + "\n");
+
 
 
 /*ESERCIZIO Crea una variabile e copiaci dentro un numero. Stampa il tipo della variabile. 
